@@ -40,7 +40,7 @@ const Weather = () => {
         try {
             console.log("API KEY FROM ENV:", import.meta.env.VITE_API_KEY);
 
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=fa3bdcb1fcf1786ae7fde748ebbe4eb4`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=`;
 
             const response = await fetch(url);
             const data = await response.json();
